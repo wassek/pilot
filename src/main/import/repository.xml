@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
+    <modules jcr:primaryType="jnt:modules">
+        <pilot-template j:dependencies="bootstrap3-components bootstrap3-core default font-awesome"
+                      j:installedModules="pilot-template"
+                      j:modulePriority="0"
+                      j:moduleType="templatesSet"
+                      j:title="Pilot Template"
+                      jcr:mixinTypes="jmix:hasExternalProviderExtension"
+                      jcr:primaryType="jnt:module">
+
+            <portlets jcr:primaryType="jnt:portletFolder"/>
+            <files jcr:primaryType="jnt:folder"/>
+            <contents jcr:primaryType="jnt:contentFolder"/>
+            <templates jcr:primaryType="jnt:templatesFolder">
+                <files jcr:primaryType="jnt:folder">
+                    <themes jcr:primaryType="jnt:folder">
+                            <default jcr:primaryType="jnt:folder"/>
+                    </themes>
+                        <img jcr:primaryType="jnt:folder">
+                            <esa_footer.png j:height="60"
+                                  j:width="60"
+                                  jcr:mixinTypes="jmix:image"
+                                  jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </esa_footer.png>
+                            <jhu_footer.png j:height="60"
+                                  j:width="55"
+                                  jcr:mixinTypes="jmix:image"
+                                  jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </jhu_footer.png>
+                            <nasa_footer.png j:height="60"
+                                   j:width="71"
+                                   jcr:mixinTypes="jmix:image"
+                                   jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </nasa_footer.png>
+                            <stsci_footer.png j:height="60"
+                                    j:width="60"
+                                    jcr:mixinTypes="jmix:image"
+                                    jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </stsci_footer.png>
+                            <stsci.png j:height="32"
+                             j:width="32"
+                             jcr:mixinTypes="jmix:image"
+                             jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </stsci.png>
+                            <watermark-ec6e30e58fecf11c2a2b9c85f10f96d5.png j:height="1310"
+                                                                  j:width="1208"
+                                                                  jcr:mixinTypes="jmix:image"
+                                                                  jcr:primaryType="jnt:file">
+                                <jcr:content jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                                <thumbnail2 jcr:mimeType="image/png" jcr:primaryType="jnt:resource"/>
+                            </watermark-ec6e30e58fecf11c2a2b9c85f10f96d5.png>
+                        </img>
+                </files>
+                <contents jcr:primaryType="jnt:contentFolder"/>
+                    <content-template j:applyOn="jnt:content"
+                              j:hiddenTemplate="true"
+                              j:priority="1"
+                              j:view="pilot-template"
+                              jcr:primaryType="jnt:contentTemplate">
+                    <pagecontent jcr:primaryType="jnt:contentList">
+                            <main-resource-display j:mainResourceView="default" jcr:primaryType="jnt:mainResourceDisplay"/>
+                    </pagecontent>
+                </content-template>
+                    <base j:hiddenTemplate="false"
+                      j:view="pilot-template"
+                      jcr:primaryType="jnt:template">
+                        <pagecontent jcr:primaryType="jnt:contentList">
+                            <stsci_wrapper columnsType="predefinedColumns"
+                                 containerCssClass="site_container"
+                                 containerId="stsci_wrapper_container"
+                                 grid="4_8"
+                                 gridLayout="fixed-width"
+                                 jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createRow bootstrap3mix:createSection bootstrap3mix:predefinedColumns"
+                                 jcr:primaryType="bootstrap3nt:columns"
+                                 rowId="stsci_wrapper_row"
+                                 sectionCssClass="stsci_wrapper"
+                                 sectionElement="div"
+                                 sectionId="stsci_wrapper_section">
+                                <stsci_wrapper-side jcr:primaryType="jnt:contentList">
+                                    <rich-text jcr:mixinTypes="jmix:referencesInField" jcr:primaryType="jnt:bigText">
+                                        <j:translation_en jcr:language="en"
+                                             jcr:primaryType="jnt:translation"
+                                             text="&lt;a class=&#34;stsci_link&#34; href=&#34;about.html#&#34;&gt;&lt;img alt=&#34;stsci.png&#34; src=&#34;##doc-context##/{workspace}/##ref:link1##&#34; style=&#34;width: 32px; height: 32px;&#34; /&gt;STScI &lt;/a&gt;&#xA;"/>
+                                        <j:referenceInField_text_en_1 j:fieldName="text_en"
+                                                         j:reference="/modules/pilot-template/templates/files/img/stsci.png"
+                                                         jcr:primaryType="jnt:referenceInField"/>
+                                    </rich-text>
+                                </stsci_wrapper-side>
+                                <stsci_wrapper-main jcr:primaryType="jnt:contentList">
+                                    <rich-text jcr:primaryType="jnt:bigText">
+                                        <j:translation_en jcr:language="en"
+                                             jcr:primaryType="jnt:translation"
+                                             text="&lt;div class=&#34;right stsci_links&#34;&gt;&#xA;&lt;a href=&#34;about.html#&#34;&gt;About STScI&lt;/a&gt;&#xA;&lt;span&gt;&#xA;|&#xA;&lt;/span&gt;&#xA;&lt;a href=&#34;about.html#&#34;&gt;Missions&lt;/a&gt;&#xA;&lt;span&gt;&#xA;|&#xA;&lt;/span&gt;&#xA;&lt;a href=&#34;about.html#&#34;&gt;Archive&lt;/a&gt;&#xA;&lt;span&gt;&#xA;|&#xA;&lt;/span&gt;&#xA;&lt;a href=&#34;about.html#&#34;&gt;My ST&lt;/a&gt;&#xA;&lt;/div&gt;"/>
+                                    </rich-text>
+                                </stsci_wrapper-main>
+                            </stsci_wrapper>
+                            <header_wrapper columnsType="nogrid"
+                                  containerCssClass="site_container"
+                                  containerId="header_wrapper_container"
+                                  gridLayout="fixed-width"
+                                  jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createSection"
+                                  jcr:primaryType="bootstrap3nt:columns"
+                                  sectionCssClass="header_wrapper"
+                                  sectionElement="div"
+                                  sectionId="header_wrapper_section">
+                                <footer_wrapper jcr:primaryType="jnt:contentList">
+                                    <section--container--row--grid columnsType="nogrid"
+                                                       jcr:mixinTypes="bootstrap3mix:createSection"
+                                                       jcr:primaryType="bootstrap3nt:columns"
+                                                       sectionCssClass="footer"
+                                                       sectionElement="div"
+                                                       sectionId="footer_section"/>
+                                </footer_wrapper>
+                                <navigation_wrapper jcr:primaryType="jnt:contentList">
+                                    <navigation_div columnsType="nogrid"
+                                        jcr:mixinTypes="bootstrap3mix:createSection"
+                                        jcr:primaryType="bootstrap3nt:columns"
+                                        sectionCssClass="navigation"
+                                        sectionElement="div"
+                                        sectionId="navigation_section">
+                                        <navigation_div jcr:primaryType="jnt:contentList">
+                                            <rich-text jcr:primaryType="jnt:bigText">
+                                                <j:translation_en jcr:language="en"
+                                                   jcr:primaryType="jnt:translation"
+                                                   text="&lt;a href=&#34;page/about.html&#34; class=&#34;&#34;&gt;About&lt;/a&gt;&#xA;&#xA;&lt;a href=&#34;news.html&#34; class=&#34;&#34;&gt;News&lt;/a&gt;&#xA;&#xA;&lt;a href=&#34;page/images.html&#34; class=&#34;&#34;&gt;Images&lt;/a&gt;&#xA;&#xA;&lt;a href=&#34;page/videos.html&#34; class=&#34;&#34;&gt;Videos&lt;/a&gt;&#xA;&#xA;&lt;a href=&#34;page/events.html&#34; class=&#34;&#34;&gt;Events&lt;/a&gt;&#xA;&#xA;&lt;a href=&#34;page/observatory.html&#34; class=&#34;&#34;&gt;Observatory&lt;/a&gt;&#xA;&#xA;&lt;a href=&#34;page/observer_workflow.html&#34; class=&#34;&#34;&gt;Observer Workflow&lt;/a&gt;&#xA;&#xA;&lt;a href=&#34;page/docs.html&#34; class=&#34;&#34;&gt;Technical Docs&lt;/a&gt;&#xA;"/>
+                                            </rich-text>
+                                        </navigation_div>
+                                    </navigation_div>
+                                </navigation_wrapper>
+                                <header_wrapper jcr:primaryType="jnt:contentList">
+                                    <header_div columnsType="nogrid"
+                                    jcr:mixinTypes="bootstrap3mix:createSection"
+                                    jcr:primaryType="bootstrap3nt:columns"
+                                    sectionCssClass="header"
+                                    sectionElement="div"
+                                    sectionId="header_section">
+                                        <header_div jcr:primaryType="jnt:contentList">
+                                            <header_row columnsType="nogrid"
+                                          jcr:mixinTypes="bootstrap3mix:createRow"
+                                          jcr:primaryType="bootstrap3nt:columns">
+                                                <header_row jcr:primaryType="jnt:contentList">
+                                                    <header_span_12 columnsType="nogrid"
+                                                    jcr:mixinTypes="bootstrap3mix:createSection"
+                                                    jcr:primaryType="bootstrap3nt:columns"
+                                                    sectionCssClass="span12"
+                                                    sectionElement="div"
+                                                    sectionId="header_span">
+                                                        <header_span_12 jcr:primaryType="jnt:contentList">
+                                                            <rich-text jcr:primaryType="jnt:bigText">
+                                                                <j:translation_en jcr:language="en"
+                                                               jcr:primaryType="jnt:translation"
+                                                               text="&lt;div class=&#34;right for_public&#34;&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;http://webbtelescope.org/&#34; target=&#34;_jwst&#34;&gt;WebbTelescope.org&lt;/a&gt;&#xA;&lt;span&gt;&#xA;|&#xA;&lt;/span&gt;&#xA;&lt;a href=&#34;http://www.jwst.nasa.gov/&#34; target=&#34;_jwst&#34;&gt;JWST @ NASA Goddard&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;http://amazing-space.stsci.edu/&#34; target=&#34;_jwst&#34;&gt;STScI's Amazing Space&lt;/a&gt;&#xA;&lt;span&gt;&#xA;|&#xA;&lt;/span&gt;&#xA;&lt;a href=&#34;http://coolcosmos.ipac.caltech.edu/&#34; target=&#34;_jwst&#34;&gt;NASA's Cool Cosmos&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;div class=&#34;social_links&#34;&gt;&#xA;&lt;div class=&#34;social_icon&#34;&gt;&#xA;&lt;a href=&#34;index.html#&#34;&gt;&lt;i class=&#34;fa fa-facebook-square&#34;&gt;&lt;/i&gt;&#xA;&lt;/a&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;social_icon&#34;&gt;&#xA;&lt;a href=&#34;index.html#&#34;&gt;&lt;i class=&#34;fa fa-flickr&#34;&gt;&lt;/i&gt;&#xA;&lt;/a&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;social_icon&#34;&gt;&#xA;&lt;a href=&#34;index.html#&#34;&gt;&lt;i class=&#34;fa fa-twitter-square&#34;&gt;&lt;/i&gt;&#xA;&lt;/a&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;social_icon&#34;&gt;&#xA;&lt;a href=&#34;index.html#&#34;&gt;&lt;i class=&#34;fa fa-youtube-square&#34;&gt;&lt;/i&gt;&#xA;&lt;/a&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;social_icon&#34;&gt;&#xA;&lt;a href=&#34;index.html#&#34;&gt;&lt;i class=&#34;fa fa-google-plus-square&#34;&gt;&lt;/i&gt;&#xA;&lt;/a&gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;div class=&#34;hr&#34;&gt;&lt;/div&gt;&#xA;&lt;div class=&#34;clearfix&#34;&gt;&lt;/div&gt;&#xA;&lt;p class=&#34;title&#34;&gt;&#xA;For The Public&#xA;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;a href=&#34;index.html&#34;&gt;&lt;h1&gt;&#xA;&lt;strong&gt;&#xA;JAMES WEBB&#xA;&lt;/strong&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h1&gt;&#xA;SPACE TELESCOPE&#xA;&lt;/h1&gt;&#xA;&lt;/a&gt;"/>
+                                                            </rich-text>
+                                                        </header_span_12>
+                                                    </header_span_12>
+                                                </header_row>
+                                            </header_row>
+                                        </header_div>
+                                    </header_div>
+                                </header_wrapper>
+                            </header_wrapper>
+                            <watermark_wrapper columnsType="nogrid"
+                                     containerCssClass="site_container"
+                                     containerId="watermark_wrapper_container"
+                                     gridLayout="fixed-width"
+                                     jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createSection"
+                                     jcr:primaryType="bootstrap3nt:columns"
+                                     sectionCssClass="watermark_wrapper"
+                                     sectionElement="div"
+                                     sectionId="watermark_wrapper_section">
+                                <watermark_wrapper jcr:primaryType="jnt:contentList">
+                                    <watermark-img-container columnsType="nogrid"
+                                                 jcr:mixinTypes="bootstrap3mix:createSection"
+                                                 jcr:primaryType="bootstrap3nt:columns"
+                                                 sectionCssClass="watermark"
+                                                 sectionElement="div">
+                                        <watermark-img-container jcr:primaryType="jnt:contentList"/>
+                                    </watermark-img-container>
+                                </watermark_wrapper>
+                            </watermark_wrapper>
+                            <page-content jcr:primaryType="jnt:area"/>
+                            <footer_wrapper columnsType="nogrid"
+                                  containerCssClass="site_container"
+                                  containerId="footer_wrapper_container"
+                                  gridLayout="fixed-width"
+                                  jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createSection"
+                                  jcr:primaryType="bootstrap3nt:columns"
+                                  sectionCssClass="footer_wrapper"
+                                  sectionElement="div"
+                                  sectionId="footer_wrapper_section">
+                                <footer_wrapper jcr:primaryType="jnt:contentList">
+                                    <footer_div columnsType="nogrid"
+                                    jcr:mixinTypes="bootstrap3mix:createSection"
+                                    jcr:primaryType="bootstrap3nt:columns"
+                                    sectionCssClass="footer"
+                                    sectionElement="div"
+                                    sectionId="footer_section">
+                                        <footer_div jcr:primaryType="jnt:contentList">
+                                            <footer_row columnsType="nogrid"
+                                          jcr:mixinTypes="bootstrap3mix:createRow"
+                                          jcr:primaryType="bootstrap3nt:columns">
+                                                <footer_row jcr:primaryType="jnt:contentList">
+                                                    <rich-text jcr:mixinTypes="jmix:referencesInField" jcr:primaryType="jnt:bigText">
+                                                        <j:translation_en jcr:language="en"
+                                                         jcr:primaryType="jnt:translation"
+                                                         text="&lt;div class=&#34;span4&#34;&gt;&#xA;&lt;ul class=&#34;footer_links&#34;&gt;&#xA; &lt;li&gt;&lt;a href=&#34;index.html#&#34;&gt;Contacts&lt;/a&gt;&lt;/li&gt;&#xA; &lt;li&gt;&lt;a href=&#34;index.html#&#34;&gt;Help Desk&lt;/a&gt;&lt;/li&gt;&#xA; &lt;li&gt;&lt;a href=&#34;index.html#&#34;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;span8&#34;&gt;&#xA;&lt;div class=&#34;right affiliate_links&#34;&gt;&lt;a alt=&#34;National Aeronautics and Space Administration&#34; href=&#34;http://www.nasa.gov&#34; title=&#34;National Aeronautics and Space Administration&#34;&gt;&lt;img alt=&#34;stsci_footer.png&#34; src=&#34;##doc-context##/{workspace}/##ref:link1##&#34; style=&#34;width: 60px; height: 60px;&#34; /&gt;&lt;img alt=&#34;nasa_footer.png&#34; src=&#34;##doc-context##/{workspace}/##ref:link2##&#34; /&gt;&lt;/a&gt; &lt;a alt=&#34;The European Space Agency&#34; href=&#34;http://www.esa.int/&#34; title=&#34;The European Space Agency&#34;&gt;&lt;img alt=&#34;esa_footer.png&#34; src=&#34;##doc-context##/{workspace}/##ref:link3##&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;right site_disclaimer&#34;&gt;&#xA;&lt;p&gt;James Webb Space Telescope is operated by Space Telescope Institute&lt;br /&gt;&#xA;on the campus of John Hopkins University in Baltimore.&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;"/>
+                                                        <j:referenceInField_text_en_3 j:fieldName="text_en"
+                                                                     j:reference="/modules/pilot-template/templates/files/img/esa_footer.png"
+                                                                     jcr:primaryType="jnt:referenceInField"/>
+                                                        <j:referenceInField_text_en_2 j:fieldName="text_en"
+                                                                     j:reference="/modules/pilot-template/templates/files/img/nasa_footer.png"
+                                                                     jcr:primaryType="jnt:referenceInField"/>
+                                                        <j:referenceInField_text_en_1 j:fieldName="text_en"
+                                                                     j:reference="/modules/pilot-template/templates/files/img/stsci_footer.png"
+                                                                     jcr:primaryType="jnt:referenceInField"/>
+                                                    </rich-text>
+                                                </footer_row>
+                                            </footer_row>
+                                        </footer_div>
+                                    </footer_div>
+                                </footer_wrapper>
+                            </footer_wrapper>
+                        </pagecontent>
+                        <home j:hiddenTemplate="false" jcr:primaryType="jnt:pageTemplate">
+                            <j:translation_en jcr:language="en"
+                                    jcr:primaryType="jnt:translation"
+                                    jcr:title="home"/>
+                            <page-content jcr:primaryType="jnt:contentList">
+                                <top-section columnsType="predefinedColumns"
+                                  grid="8_4"
+                                  gridLayout="fixed-width"
+                                  jcr:mixinTypes="bootstrap3mix:createContainer bootstrap3mix:createRow bootstrap3mix:createSection bootstrap3mix:predefinedColumns"
+                                  jcr:primaryType="bootstrap3nt:columns"
+                                  sectionElement="div"/>
+                            </page-content>
+                        </home>
+                    </base>
+            </templates>
+                
+                <home j:isHomePage="true"
+               j:templateName="home"
+               jcr:primaryType="jnt:page">
+                    <j:translation_en jcr:language="en"
+                              jcr:mixinTypes="mix:title"
+                              jcr:primaryType="jnt:translation"
+                              jcr:title="Home"/>
+                </home>
+        </pilot-template>
+    </modules>
+</content>

@@ -1,0 +1,7 @@
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  width: 980px;
+}
+.watermark_wrapper .container .watermark {background: url(/files/default/modules/pilot-template/1.0-SNAPSHOT/templates/files/img/watermark-ec6e30e58fecf11c2a2b9c85f10f96d5.png) 
+  no-repeat center center rgba(199, 84, 84, 0);
+  width:1208px;height:1310px;position:absolute;z-index:1;top:-519px;left:-390px
+}
